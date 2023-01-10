@@ -11,6 +11,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+//CAMBIAR EL ALL POR PERSIST Y MIRAR QUE OCURRE ANTES DEL VIERNES --> HACER PERSIST EN VEZ DE DELETE
+//CAMBIER EL PERSIST POR EL MERGE --> MERGE EN VEZ DE DELETE
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello world");
