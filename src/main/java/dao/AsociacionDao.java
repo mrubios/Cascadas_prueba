@@ -43,4 +43,7 @@ public class AsociacionDao {
             }
         }
     }
+    public Asociacion buscarAsociacion(Asociacion a ){
+        return  entityManager.merge(a);
+    }
 }

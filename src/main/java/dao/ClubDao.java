@@ -43,4 +43,8 @@ public class ClubDao {
             }
         }
     }
+
+    public Club buscarClub(Club c ){
+        return entityManager.merge(c);
+    }
 }

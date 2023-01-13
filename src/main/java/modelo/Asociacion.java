@@ -20,6 +20,14 @@ public class Asociacion {
     int id;
     String nombre;
 
-    @OneToMany(mappedBy = "asociacion",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "asociacion",cascade = CascadeType.MERGE)
     List<Club> clubes;
+
+    @Override
+    public String toString() {
+        return "Asociacion{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
 }

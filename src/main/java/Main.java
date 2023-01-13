@@ -41,14 +41,22 @@ public class Main {
         clubs.add(c2);
         a.setClubes(clubs);
 
-        asociacionDao.guardaAsociacion(a);
+        //PERSIST
+        //asociacionDao.guardaAsociacion(a);
+        //clubDao.guardaClub(c1);
 
-        Thread.sleep(5000);
+        //MERGE
+//        Club mergedClub = clubDao.buscarClub(c1);
+//        System.out.println(mergedClub);
 
-        //asociacionDao.borrarAsociacion(a);
-        System.out.println("Borrar club");
-        clubDao.borrarClub(c1);
+        Asociacion mergedAsociacion = asociacionDao.buscarAsociacion(a);
+        System.out.println(mergedAsociacion);
 
-        System.out.println("Fin");
+        //BORRADO EN CASCADA
+//        asociacionDao.borrarAsociacion(a);
+//        System.out.println("Borrar club");
+//        clubDao.borrarClub(c1);
+//
+//        System.out.println("Fin");
     }
 }

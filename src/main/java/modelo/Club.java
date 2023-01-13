@@ -19,6 +19,7 @@ public class Club {
     int id;
     String club;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     Asociacion asociacion;
+
 }
